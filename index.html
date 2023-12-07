@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picky Coffee</title>
     <style>
-        body{
+        body {
             text-align: center;
             font-family: sans-serif;
             background-color: rgb(119, 6, 6);
+            margin: 0;
+            padding: 0;
         }
+
         .logo {
             height: 150px;
             margin: 20px;
         }
 
-        .icons{
+        .icons {
             height: 55px;
         }
 
@@ -31,102 +35,113 @@
             border-radius: 70px;
             align-items: center;
             box-shadow: 2px 5px 7px 3px #888888;
-        }
-
-        .buttons > p {
-            margin-right: 93px;
-            
-        }
-        a {
             text-decoration: none;
             color: black;
             font-size: 20px;
+            user-select: none;
         }
 
-        
-        .buttons:hover{
-            background-color: rgb(35,32,33);
+        .buttons>p {
+            margin-right: 93px;
+
+        }
+
+
+
+
+        .buttons:hover {
+            background-color: rgb(35, 32, 33);
             color: white;
             border: 2px solid rgb(255, 255, 255);
             height: 75px;
         }
 
 
-        #text-edit{
+        #text-edit {
             margin-right: 120px;
             margin-left: 20px;
         }
 
-        #tik-tok{
+        #tik-tok {
             margin-right: 140px;
             margin-left: 50px;
         }
 
-        #whatsapp{
+        #whatsapp {
             margin-left: 10px;
         }
 
-        #whatsapp-img{
+        #whatsapp-img {
             margin-left: 9px;
         }
 
-        #instagram{
+        #instagram {
             height: 60px;
             margin-right: 9px;
         }
-        @media (max-width: 400px){
-        .buttons > p {
-            margin-right: 70px;
+
+        
+
+            /* Add this to your existing styles.css or in your <style> tag in the head */
+        footer {
+            position: fixed;
+            bottom: 0;
+            background-color: rgb(80, 6, 6);
+            color: white;
+            padding:3px;
+            padding-top: 4px;
+            text-align: center;
+            width: 100%;
         }
+
+
+        @media (max-width: 400px) {
+            .buttons>p {
+                margin-right: 70px;
+            }
         }
-        @media (max-width: 350px){
-        .buttons > p {
-            margin-right: 60px;
+
+        @media (max-width: 350px) {
+            .buttons>p {
+                margin-right: 60px;
+            }
         }
-        }
-        @media (max-width: 320px){
-        .buttons > p {
-            margin-right: 50px;
-        }
+
+        @media (max-width: 320px) {
+            .buttons>p {
+                margin-right: 50px;
+            }
         }
     </style>
 </head>
+
 <body>
     <img class="logo" src="./picky img.png" alt="picky img">
     <br>
-    <a href="https://pickycoffee-shop.geideapos.net/">
-        <div class="buttons">
-            <img class="icons" src="./web.png" alt="">
-            <p>Picky's Website</p>
-        </div>
-    </a>
+    <div class="buttons" onclick="window.location.href='https://pickycoffee-shop.geideapos.net/'">
+        <img class="icons" src="./web.png" alt="">
+        <p>Picky's Website</p>
+    </div>
     <br>
-    <a href="https://www.facebook.com/share/kRvEcGbkeyJMgf6y/">
-        <div class="buttons">
-            <img class="icons" src="./facebook.png" alt="">
-            <p id="text-edit">Facebook</p>
-        </div>
-    </a>
+    <div class="buttons" onclick="window.location.href='https://www.facebook.com/share/kRvEcGbkeyJMgf6y/'">
+        <img class="icons" src="./facebook.png" alt="">
+        <p id="text-edit">Facebook</p>
+    </div>
     <br>
-    <a href="">
-        <div class="buttons">
-            <img class="icons" id="instagram" src="./instagram.png" alt="">
-            <p id="text-edit">Instagram</p>
-        </div>
-    </a>
+    <div class="buttons" onclick="window.location.href=''">
+        <img class="icons" id="instagram" src="./instagram.png" alt="">
+        <p id="text-edit">Instagram</p>
+    </div>
     <br>
-    <a href="">
-        <div class="buttons">
-            <img class="icons"src="./tik-tok.png" alt="">
-            <p id="tik-tok">Tiktok</p>
-        </div>
-    </a>
+    <div class="buttons" onclick="window.location.href=''">
+        <img class="icons" src="./tik-tok.png" alt="">
+        <p id="tik-tok">Tiktok</p>
+    </div>
     <br>
-    <a href="">
-        <div class="buttons">
-            <img class="icons" id="whatsapp-img" src="./whatsapp logo.png" alt="">
-            <p id="whatsapp">Whatsapp channel</p>
-        </div>
-    </a>
-</body>
+    <div class="buttons" onclick="window.location.href=''">
+        <img class="icons" id="whatsapp-img" src="./whatsapp logo.png" alt="">
+        <p id="whatsapp">Whatsapp channel</p>
+    </div>
+    <footer>&copy; 2023 Picky Coffee. All rights reserved.</footer></body>
+
 </html>
